@@ -1,4 +1,4 @@
-// gefinición / declaración
+// definición / declaración
 function saludar(){
     console.log("Hola!!");
     

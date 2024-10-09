@@ -12,7 +12,7 @@ function ejemplo2(){
         let mensaje2="Hola2";
         console.log(mensaje2);
     }
-    console.log(mensaje2);
+    //console.log(mensaje2);
 }
 
 

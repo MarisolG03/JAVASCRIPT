@@ -1,7 +1,7 @@
+//declaraciones
 function suma(nota1, nota2, nota3){
     let resultado=nota1+nota2+nota3;
     return resultado;
-    console.log(resultado);
 }
 
 
