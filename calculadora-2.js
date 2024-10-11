@@ -1,6 +1,8 @@
 const prompt = require("prompt-sync")({ sigint: true }); 
 
-/*let numero = parseInt(prompt("Por favor ingrese un número: "));
+/*
+Para recibir datos como números
+let numero = parseInt(prompt("Por favor ingrese un número: "));
 console.log("El número que ha seleccionado es: ", numero);*/
 
 
@@ -39,38 +41,52 @@ console.log("4. División");
 
 // npm i prompt-sync (instalación en la terminal)
 
-let opcion =prompt("Indique la operación que desea realizar: ");
+let opcion =parseInt(prompt("Indique la operación que desea realizar: "));
 let numero1;
 let numero2;
 let resultado;
 
+
 switch (opcion) {
     case 1:
-        numero1=prompt("Indique el primer número a sumar: ");
-        numero2=prompt("Indique el segundo número a sumar: ");
+        numero1=parseInt(prompt("Indique el primer número a sumar: "));
+        numero2=parseInt(prompt("Indique el segundo número a sumar: "));
         resultado=suma(numero1, numero2);
         console.log("El resultado de la suma es: " + resultado);
         break;
     case 2:
-        numero1=prompt("Indique el primer número a restar: ");
-        numero2=prompt("Indique el segundo número a restar: ");
+        numero1=parseInt(prompt("Indique el primer número a restar: "));
+        numero2=parseInt(prompt("Indique el segundo número a restar: "));
         resultado=resta(numero1, numero2);
         console.log("El resultado de la resta es: " + resultado);
         break;
     case 3:
-        numero1=prompt("Indique el primer número a multiplicar: ");
-        numero2=prompt("Indique el segundo número a multiplicar: ");
+        numero1=parseInt(prompt("Indique el primer número a multiplic)ar: "));
+        numero2=parseInt(prompt("Indique el segundo número a multipli)car: "));
         resultado=multiplicar(numero1, numero2);
         console.log("El resultado de la multiplicación es: " + resultado);
         break;
     case 4:
-        numero1=prompt("Indique el primer número a dividir: ");
-        numero2=prompt("Indique el segundo número a dividir: ");
+        numero1=parseInt(prompt("Indique el primer número a dividir: "));
         resultado=division(numero1, numero2);
-        if(typeof resultado ){}
+        numero2=parseInt(prompt("Indique el segundo número a dividir: "));
+        if(typeof resultado == "string"){
+            console.log(resultado);
+        }
+        else{
         console.log("El resultado de la división es: " + resultado);
+        }
         break;
-
+        
     default:
+        console.log("Ingresó una opción no válida");
         break;
 }
+
+
+
+/*Para saber el tipo de dato
+let numero=5;
+let mensaje ="Hola";
+console.log(typeof mensaje); */
+
