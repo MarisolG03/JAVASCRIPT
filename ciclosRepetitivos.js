@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")({ sigint: true }); 
-/*
+
 console.log("1")
 console.log("2")
 console.log("3")
@@ -30,11 +30,11 @@ while(control=="si"){
     control=prompt("Ingrese 'si' si desea agregar más notas o 'no' si no: ")
 }
 let promedio = sumaNotas/cant;
-console.log("El promedio es: " + promedio);*/
+console.log("El promedio es: " + promedio);
 
 
-//do while 
-let i =15;
+//while 
+let i =1;
 
 while (i<=10) {
     console.log(i);
@@ -42,6 +42,7 @@ while (i<=10) {
     i++;
 }
 
+//do while 
 let j=15;
 
 do{
