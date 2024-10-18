@@ -43,6 +43,6 @@ let clubes=["Racing","Boca","Lanus","Boca"];
 let posicionEncontrada=clubes.lastIndexOf("Boca");
 console.log(posicionEncontrada);
 
-// .includes() busca elementos retornando un booleano
+// .includes() busca elementos (retornando un booleano)
 let verduras= ["Brócoli","Pepino","Aguacate"];
 console.log(verduras.includes("Papa"));
