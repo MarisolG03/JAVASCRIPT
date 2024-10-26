@@ -67,3 +67,15 @@ for(let i=0; i<num.length; i++){
 }
 
 console.log(menor);
+
+let count =0;
+while(count<5){
+    console.log(count);
+    count++;
+}
+
+let x=10;
+while(x>5){
+    console.log(x);
+    x -=2;
+}
